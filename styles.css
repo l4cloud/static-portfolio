@@ -53,7 +53,13 @@ body, html {
 .description {
     font-size: 1.2rem;
     color: #c6d0f5;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.visitors {
+    font-size: 1rem;
+    margin-top:5px;
+    color: #c6d0f5;
 }
 
 .links {

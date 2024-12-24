@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-<script>
-</script>
-</head>
+    <meta name="htmx-config" content='{"selfRequestsOnly":false}'>
+<script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+    </head>
     <body >
     <div class="container">
         <div class="content">
@@ -22,6 +22,12 @@
                 <a href="https://github.com/yourusername" target="_blank">GitHub</a>
                 <a href="mailto:your.email@example.com">Email</a>
             </div>
+                
+            <div class="visitors">
+                   Visitors: <span hx-get="https://1gtoqanawh.execute-api.eu-west-1.amazonaws.com/dev/view" hx-trigger="load"></span>
+            </div>
+                
+    
         </div>
     </div>
 </body>
